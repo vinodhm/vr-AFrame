@@ -1,0 +1,29 @@
+<html>
+  <head>    
+    <link rel="stylesheet" href="styles/score.css">
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>    
+    <script src="scripts/events.js"></script>    
+    <!-- <script> 
+        document.getElementById("#includedContent").load("./score.html"); 
+    </script> -->
+    <script>
+        var hitCount=0;     
+        registerIncreaseScore();
+    </script>
+  </head>
+  <body>   
+    <!-- <include src="./score.html"></include>     -->
+    <iframe id="scoreframe" name="scoreframe" src="score.html" height="100%" width="100" title="score-bar"></iframe> 
+    <a-scene AFRMAE>            
+      <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>      
+      <a-cylinder position="-3 5.75 -10" color="green" open-ended="true" width="20" increasescore ></a-cylinder> 
+          
+      <!-- camera-->
+      <a-entity position="0 0 7"> 
+        <a-camera user-height="1.6">
+            <a-cursor></a-cursor>
+        </a-camera>
+     </a-entity>       
+    </a-scene>
+  </body>
+</html>

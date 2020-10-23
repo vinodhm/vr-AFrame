@@ -1,0 +1,22 @@
+{
+    "name": "training",
+    "description": "",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "start": "live-server --port=7000",
+        "deploy": "ghpages"
+    },
+    "devDependencies": {
+        "ghpages": "0.0.10",
+        "liveserver": "^1.2.0"
+    },
+    "keywords": [
+        "aframe"
+    ],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "live-server": "^1.2.1"
+    }
+}
